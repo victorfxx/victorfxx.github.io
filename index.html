@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>vitoriafxx</title>
+<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+<style>
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header, .blog, .sidebar, .footer {
+    flex-grow: 1;
+    flex-basis: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media all and (min-width: 800px) {
+  /* On bigger screens, sidebar now only gets 1/4 of space */
+  .blog { flex: 3 0px; }
+  .sidebar { flex: 1 0px; }
+}
+    
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>oi, tudo bem?</h1>
+  </div>
+  <div class="blog">
+<h3>blog, projetos, organização.</h3>
+  <p>vou usar esse espaço pra desabafar, escrever, postar desenhos que eu bem entender, e publicar meus projetos, vai ter um link pra eles no menu ao lado.</p>
+      <p>[segunda, 12 de agosto de 2019]</p>
+  </div>
+  <div class="sidebar">
+      <img src="avi.jpg" widht="200px" height="200px">
+    <h3>vitória fernandes</h3>
+    indie game developer, tryhard.
+  <ul style="list-style: none;">
+  <li><a href="projetos.html">projetos</a></li>
+  </ul>
+  </div>
+  <div class="footer"><img src="Twitter_logo_2012.svg" widht="16px" height="16px">@vitoriafxx</div>
+</div>
+</body>
+</html>
